@@ -1,0 +1,3 @@
+[submodule "ds2i"]
+	path = ds2i
+	url = https://github.com/ot/ds2i.git
