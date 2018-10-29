@@ -114,7 +114,7 @@ void handle_request(
     boost::optional<unsigned int> ranked_at_opt = request.get_optional<unsigned int>("ranked_at");
     if (ranked_at_opt) {
         ranked_at = ranked_at_opt.get();
-        if (ranked_at == 0 || ranked_at > 1000*1000*1000) {
+        if (ranked_at == 0 || ranked_at > 1000*1000) {
             throw std::runtime_error("Ranked at must be greater than 0 and lower than 1M");
         }
     }
